@@ -1,10 +1,11 @@
 # Author: Eric Benditt erb5623@psu.edu  
+# Section: 4
 
 def digit_sum(n):
   if n == 0: 
     return 0
   else:
-    return (n % 10 + digit_sum(int(n / 10)))
+    return (n % 10 + digit_sum(int(n // 10)))
 
 def run():
   n = int(input("Enter an int: "))
